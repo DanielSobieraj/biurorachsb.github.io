@@ -39,7 +39,7 @@
 }
 
 .animated-icon2 span {
-    background: #e3f2fd;
+    background: dimgrey;
 }
 
 .animated-icon3 span {
@@ -181,3 +181,4 @@
 .wow {
     visibility: hidden;
 }
+
