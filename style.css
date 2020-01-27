@@ -34,17 +34,11 @@
     transition: .25s ease-in-out;
 }
 
-.animated-icon1 span {
-    background: #e65100;
-}
 
 .animated-icon2 span {
-    background: dimgrey;
+    background: #696969;
 }
 
-.animated-icon3 span {
-    background: #f3e5f5;
-}
 
 .animated-icon1 span:nth-child(1) {
     top: 0px;
