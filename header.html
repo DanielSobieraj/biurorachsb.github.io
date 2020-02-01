@@ -31,11 +31,11 @@
             <!-- Links -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Strona główna
+                    <a class="nav-link" href="#">Strona główna
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cennik.html">Cennik</a>
+                    <a class="nav-link" href="index.html#cennik">Cennik</a>
                 </li>
 
                 <!-- Dropdown -->
@@ -54,7 +54,7 @@
                     <a class="nav-link" href="promocje.html">Promocje</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    <a class="nav-link" href="index.html#kontakt">Kontakt</a>
                 </li>
             </ul>
             <!-- Links -->
@@ -70,5 +70,11 @@
         $('.second-button').on('click', function () {
             $('.animated-icon2').toggleClass('open');
         });
+    });
+</script>
+<script>
+    $('.navbar-collapse a').click(function () {
+        $(".navbar-collapse").collapse('hide');
+        $('.animated-icon2').toggleClass('open');
     });
 </script>
