@@ -435,9 +435,11 @@
         $('.second-button').on('click', function () {
             $('.animated-icon2').toggleClass('open');
         });
-        $('.nav-link:nth-child(3)').on('click', function () {
+        $('.nav-link:nth-child(-n+2)').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+            $('.navbar-collapse').toggleClass('show');
         });
-        $('.nav-link').on('click', function () {
+        $('.nav-link:nth-child(n+4)').on('click', function () {
             $('.animated-icon2').toggleClass('open');
             $('.navbar-collapse').toggleClass('show');
         });
