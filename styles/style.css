@@ -109,11 +109,6 @@ header .overlay {
   width: 50px;
 }
 
-#oferta,
-#promocje {
-  text-shadow: black 0.1em 0.1em 0.2em;
-}
-
 .red-bar {
   content: "";
   display: block;
