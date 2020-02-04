@@ -59,7 +59,7 @@
 
         <!-- Collapse button -->
         <button aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler second-button "
+                class="navbar-toggler second-button"
                 data-target="#collapseNav" data-toggle="collapse" type="button">
             <div class="animated-icon2">
                 <span></span>
@@ -175,8 +175,8 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-12 mb-5 wow animated fadeInUp text-center" data-wow-delay="0.6s">
-                    <p class="m-0 text-center">Lorem ipsum dolor sit amet.</p>
-                    <h2 class="font-weight-bold">Lorem ipsum dolor sit amet, consectetur.</h2>
+                    <!--                    <p class="m-0 text-center">Lorem ipsum dolor sit amet.</p>-->
+                    <h2 class="font-weight-bold">Oferta firmy</h2>
                     <p class="red-bar"></p>
                 </div>
                 <div class="row wow animated fadeInUp no-gutters" data-wow-delay="0.7s">
@@ -186,7 +186,6 @@
                             <i class="far fa-address-book icon-red"></i>
                         </div>
                         <div>
-                            <h3>Tytuł oferta 1</h3>
                             <p>Podstawą naszej oferty dla klientów jest zapewnienie klientom fachowej
                                 i
                                 kompleksowej obsługi, która obejmuje przede wszystkim rachunkowość, księgowość oraz
@@ -201,7 +200,6 @@
                             <i class="far fa-gem icon-red img-fluid"></i>
                         </div>
                         <div>
-                            <h3>Tytuł oferta 2</h3>
                             <p>Najważniejsza dla nas jest wygoda Klienta, rzetelność i najwyższa
                                 jakość
                                 świadczonych przez nas usług. Twoje Biuro Rachunkowe stara się, aby rachunkowość oraz
@@ -215,7 +213,6 @@
                             <i class="far fa-address-card icon-red"></i>
                         </div>
                         <div>
-                            <h3>Tytuł oferta 3</h3>
                             <p>Twoje Biuro Rachunkowe Sylwia Baryś powstało w 2006 i świadczy usługi
                                 w
                                 zakresie rachunkowości-księgowości. Biuro zajmuje się profesjonalną i kompleksową
@@ -232,7 +229,6 @@
                             <i class="fas fa-piggy-bank icon-red"></i>
                         </div>
                         <div>
-                            <h3>Tytuł oferta 4</h3>
                             <p> Nasza oferta skierowana jest głównie do małych i średnich
                                 przedsiębiorstw,
                                 których właściciele wolą skupić się na rozwoju własnej firmy, niż na śledzeniu coraz
@@ -246,7 +242,6 @@
                             <i class="far fa-file-alt icon-red"></i>
                         </div>
                         <div>
-                            <h3>Tytuł oferta 5</h3>
                             <p>Właścicielka firmy posiada wszelkie kwalifikacje niezbędne do
                                 usługowego
                                 prowadzenia ksiąg rachunkowych, w tym certyfikat Ministerstwa Finansów Nr 4028/2003</p>
@@ -259,7 +254,6 @@
                             <i class="fas fa-university icon-red"></i>
                         </div>
                         <div>
-                            <h3>Tytuł oferta 6</h3>
                             <p>Biuro ponosi pełną odpowiedzialność za prawidłowość prowadzonych ksiąg
                                 i
                                 rozliczeń klientów przed US i ZUS. Działalność Biura jest ubezpieczona w zakresie
@@ -438,8 +432,15 @@
 <script>
     $(document).ready(function () {
         new WOW().init();
+        $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+        });
+        $('.nav-link').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+            $('.navbar-collapse').toggleClass('show');
+        });
     });
-    $('#basicExampleModal').modal('show')
+    $('#basicExampleModal').modal('show');
 </script>
 
 </body>

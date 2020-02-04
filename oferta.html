@@ -249,8 +249,15 @@
 <script>
     $(document).ready(function () {
         new WOW().init();
+        $('.second-button').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+        });
+        $('.nav-link').on('click', function () {
+            $('.animated-icon2').toggleClass('open');
+            $('.navbar-collapse').toggleClass('show');
+        });
     });
-    $('#basicExampleModal').modal('show')
+    $('#basicExampleModal').modal('show');
 </script>
 
 </body>
