@@ -83,14 +83,25 @@
                 </li>
 
                 <!-- Dropdown -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown d-block d-lg-none">
                     <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
                        data-toggle="dropdown" id="navbarDropdownMenuLink">Oferta</a>
-                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-primary">
+                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-primary show">
                         <a class="dropdown-item">Pełna księgowość</a>
                         <a class="dropdown-item">Uproszczona księgowość</a>
                         <a class="dropdown-item">Kadry i płace</a>
                         <a class="dropdown-item" href="oferta.html">Rozliczenia PIT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-none d-lg-block">
+                    <a aria-expanded="false" aria-haspopup="true"
+                       class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown"
+                       id="navbarDropdownMenuLink">Oferta</a>
+                    <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu dropdown-primary">
+                        <a class="dropdown-item waves-effect waves-light">Pełna księgowość</a>
+                        <a class="dropdown-item waves-effect waves-light">Uproszczona księgowość</a>
+                        <a class="dropdown-item waves-effect waves-light">Kadry i płace</a>
+                        <a class="dropdown-item waves-effect waves-light" href="oferta.html">Rozliczenia PIT</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -435,11 +446,7 @@
         $('.second-button').on('click', function () {
             $('.animated-icon2').toggleClass('open');
         });
-        $('.nav-link:nth-child(-n+2)').on('click', function () {
-            $('.animated-icon2').toggleClass('open');
-            $('.navbar-collapse').toggleClass('show');
-        });
-        $('.nav-link:nth-child(n+4)').on('click', function () {
+        $('.nav-link').on('click', function () {
             $('.animated-icon2').toggleClass('open');
             $('.navbar-collapse').toggleClass('show');
         });
