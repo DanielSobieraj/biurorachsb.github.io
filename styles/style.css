@@ -130,25 +130,30 @@ header .overlay {
 }
 
 .dropdown:hover > .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 .modal-text {
-    background: rgba(254, 254, 254, 0.8);
+  background: rgba(254, 254, 254, 0.8);
 }
 
 .call-button {
-    background: #d21e2b;
-    width: 100px;
-    margin: 0 auto;
+  background: #d21e2b;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .call-button a {
-    color: white;
+  color: white;
 }
 
 .call-button a:hover {
-    color: white;
+  color: white;
+}
+
+ul li {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
