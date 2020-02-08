@@ -72,3 +72,18 @@ header {
   background: rgba(254, 254, 254, 0.8);
 }
 
+.call-button {
+  background: $barColor;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.call-button a {
+  color: white;
+}
+
+.call-button a:hover {
+  color: white;
+}
+
+

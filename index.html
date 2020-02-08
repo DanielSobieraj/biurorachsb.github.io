@@ -88,9 +88,9 @@
                        data-toggle="dropdown" id="navbarDropdownMenuLink">Oferta</a>
                     <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-primary show">
                         <a class="dropdown-item">Pełna księgowość</a>
-                        <a class="dropdown-item">Uproszczona księgowość</a>
+                        <a class="dropdown-item" href="oferta.html#uproszczona-ksiegowosc">Uproszczona księgowość</a>
                         <a class="dropdown-item">Kadry i płace</a>
-                        <a class="dropdown-item" href="oferta.html">Rozliczenia PIT</a>
+                        <a class="dropdown-item" href="oferta.html#rozliczenia-roczne">Rozliczenia PIT</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown d-none d-lg-block">
@@ -131,11 +131,10 @@
             <div class="carousel-item background-dark active h-100"
                  style="background: url('img/carousel1.jp2') center / cover no-repeat">
                 <div class="overlay">
-                    <div class="container h-100 d-flex justify-content-center align-items-center">
+                    <div class="container h-100 d-flex justify-content-center align-items-center text-center">
                         <div class="text-dark bg-white p-3">
-                            <h1 class="wow animated fadeInDown" data-wow-delay="0.6s">Tytuł 1</h1>
-                            <p class="wow animated fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Ipsa, optio.</p>
+                            <h1 class="wow animated fadeInDown" data-wow-delay="0.6s">Biuro Rachunkowe <br> Sylwia Baryś
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -143,11 +142,10 @@
             <div class="carousel-item background-dark h-100"
                  style="background: url('img/carousel2.jp2') center / cover no-repeat">
                 <div class="overlay">
-                    <div class="container h-100 d-flex justify-content-end align-items-center">
+                    <div class="container h-100 d-flex justify-content-end align-items-center text-center">
                         <div class="text-dark bg-white p-3">
-                            <h1 class="wow animated fadeInDown" data-wow-delay="0.6s">Tytuł 2</h1>
-                            <p class="wow animated fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Ipsa, optio.</p>
+                            <h1 class="wow animated fadeInDown" data-wow-delay="0.6s">Biuro Rachunkowe <br> Sylwia Baryś
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -155,11 +153,10 @@
             <div class="carousel-item background-dark h-100"
                  style="background: url('img/carousel3.jp2') center / cover no-repeat">
                 <div class="overlay">
-                    <div class="container h-100 d-flex justify-content-center align-items-center">
+                    <div class="container h-100 d-flex justify-content-center align-items-center text-center">
                         <div class="text-dark bg-white p-3">
-                            <h1 class="wow animated fadeInDown" data-wow-delay="0.6s">Tytuł 3</h1>
-                            <p class="wow animated fadeInUp" data-wow-delay="0.6s">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Ipsa, optio.</p>
+                            <h1 class="wow animated fadeInDown" data-wow-delay="0.6s">Biuro Rachunkowe <br> Sylwia Baryś
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -187,7 +184,7 @@
             <div class="row my-5">
                 <div class="col-12 mb-5 wow animated fadeInUp text-center" data-wow-delay="0.6s">
                     <!--                    <p class="m-0 text-center">Lorem ipsum dolor sit amet.</p>-->
-                    <h2 class="font-weight-bold">Oferta firmy</h2>
+                    <h2>Oferta firmy</h2>
                     <p class="red-bar"></p>
                 </div>
                 <div class="row wow animated fadeInUp no-gutters" data-wow-delay="0.7s">
@@ -416,12 +413,16 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content" style="background: url('img/carousel2.jp2') center / cover no-repeat">
             <div class="modal-body">
-                <div class="modal-text">
+                <div class="modal-text p-2">
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h3>Zeznania roczne 2019</h3>
                     <h4>od 20zł</h4>
-                    <button class="btn btn-red" data-dismiss="modal" onclick="window.location.href = 'oferta.html';"
-                            type="button">Zadzwoń
-                    </button>
+                    <div class="call-button p-2">
+                        <a class="d-md-none" href="tel:+48515821662">Zadzwoń</a>
+                        <a class="d-none d-md-block" href="#kontakt">Zadzwoń</a>
+                    </div>
                 </div>
             </div>
         </div>
